@@ -21,7 +21,7 @@ jobs:
           node-version: '16.x'
     
       - run: npm install vuepress
-      - run: npm i -g vue-template-compiler && npx vuepress build
+      - run: npx vuepress build
       - name: Upload result of vuepress build
         uses: actions/upload-artifact@v3
         with:
